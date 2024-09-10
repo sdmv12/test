@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white; /* Texto blanco en el encabezado */
+}
+
+main {
+    padding: 20px;
+}
+
+/* Sección de juegos */
+#game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.game {
+    background-color: #f9f9f9; /* Fondo claro para cada bloque de juego */
+    padding: 10px;
+    border-radius: 10px;
+    width: 220px; /* Ajusta el ancho de cada bloque de juego */
+}
+
+.game img {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen mantenga su aspecto sin deformarse */
+    border-radius: 10px; /* Opcional: Bordes redondeados para las imágenes */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.game h3 {
+    margin: 10px 0;
+    color: black; /* Texto negro en el título del juego */
+}
+
+.game ul {
+    padding-left: 20px;
+    color: black; /* Texto negro en la lista de características */
+}
+
+/* Sección de selección flotante */
+#selection {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    color: white; /* Texto blanco en la sección de selección */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#selection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white; /* Texto blanco en la lista de juegos seleccionados */
+}
+
+#selection ul li {
+    margin-bottom: 10px;
+}
+
+#selection button {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#selection button:hover {
+    background-color: #777;
+}
+
+/* Estilos para el logo en la esquina */
+#logo-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; /* Ancho del logo */
+    height: auto;
+}
+
+#logo-container img {
+    width: 100%; /* Ajusta el tamaño del logo */
+    height: auto;
+}
