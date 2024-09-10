@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionador de Juegos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor del logo en la esquina -->
+    <div id="logo-container">
+        <img src="imagenes/logo.png" alt="Logo de Bienvenida">
+    </div>
+
+    <!-- Contenido de la página -->
+    <header>
+        <h1>Seleccionador de Juegos</h1>
+    </header>
+    <main>
+        <!-- Sección de juegos -->
+        <section id="game-list">
+            <h2>Selecciona tus juegos</h2>
+            <!-- Contenido de los juegos -->
+            <div class="game">
+                <img src="imagenes/red-dead-redemption-2.jpg" alt="Red Dead Redemption 2">
+                <h3>Red Dead Redemption 2</h3>
+                <ul>
+                    <li>Plataforma: PS4, Xbox One, PC</li>
+                    <li>Género: Aventura, Acción</li>
+                    <li>Desarrollador: Rockstar Games</li>
+                </ul>
+                <button onclick="addGame('Red Dead Redemption 2')">Agregar</button>
+            </div>
+            <div class="game">
+                <img src="imagenes/ghost-of-tsushima.jpg" alt="Ghost of Tsushima">
+                <h3>Ghost of Tsushima</h3>
+                <ul>
+                    <li>Plataforma: PS4</li>
+                    <li>Género: Acción, Aventura</li>
+                    <li>Desarrollador: Sucker Punch Productions</li>
+                </ul>
+                <button onclick="addGame('Ghost of Tsushima')">Agregar</button>
+            </div>
+            <div class="game">
+                <img src="imagenes/assassins-creed-valhalla.jpg" alt="Assassin's Creed Valhalla">
+                <h3>Assassin's Creed Valhalla</h3>
+                <ul>
+                    <li>Plataforma: PS4, PS5, Xbox One, Xbox Series X/S, PC</li>
+                    <li>Género: Acción, Rol</li>
+                    <li>Desarrollador: Ubisoft</li>
+                </ul>
+                <button onclick="addGame('Assassin\'s Creed Valhalla')">Agregar</button>
+            </div>
+            <div class="game">
+                <img src="imagenes/resident-evil-2-remake.jpg" alt="Resident Evil 2 Remake">
+                <h3>Resident Evil 2 Remake</h3>
+                <ul>
+                    <li>Plataforma: PS4, Xbox One, PC</li>
+                    <li>Género: Survival Horror</li>
+                    <li>Desarrollador: Capcom</li>
+                </ul>
+                <button onclick="addGame('Resident Evil 2 Remake')">Agregar</button>
+            </div>
+            <div class="game">
+                <img src="imagenes/god-of-war.jpg" alt="God of War">
+                <h3>God of War</h3>
+                <ul>
+                    <li>Plataforma: PS4, PC</li>
+                    <li>Género: Acción, Aventura</li>
+                    <li>Desarrollador: Santa Monica Studio</li>
+                </ul>
+                <button onclick="addGame('God of War')">Agregar</button>
+            </div>
+        </section>
+
+        <!-- Sección de selección flotante -->
+        <section id="selection">
+            <h2>Selección Actual</h2>
+            <ul id="selected-games"></ul>
+            <button onclick="generateLink()">Generar Enlace</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
